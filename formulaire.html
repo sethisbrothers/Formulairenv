@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="formulaire.css">
+        <title>formulaire avec css grid</title>
+    </head>
+    <body>
+        <h1>Formulaire DWWM</h1>
+        <form class="f">
+            <div class="nom">
+                <div>Nom</div>
+                <div class="input"><input type="name" placeholder="Entrez votre Nom"></div>
+            </div>
+            <div class="mail">
+                <div>Email</div>
+                <div class="input"><input type="email" placeholder="Entrez votre mail"></div>
+            </div>
+            <div class="cours">
+                <div>Indiquez votre satisfaction au cours de 1 à 10</div>
+                <div class="input"><input type="number" placeholder="Numero de 1 à 10" min="1" max="10" step="1"></div>
+            </div>
+            <div class="coach">
+                <div>Qui est votre Coach ?</div>
+                <div class="input">
+                    <select><option>Birante</option><option>Mamadou</option><option>Malick</option></select>
+                </div>
+            </div>
+            <div class="moment">
+                <div>A quel moment avez-vous cours ?</div>
+                <label>
+                    <input type="radio" name="moment">Matin</input>
+                    <input type="radio" name="moment">Après-Midi</input>
+                    <input type="radio" name="moment">Soir</input>
+                </label>
+            </div>
+            <div class="choix">
+                <div>Quels outils avez-vous rencontrés jusque-là ? (Sélectionnez tout ce qui s'applique)</div>
+                <div>
+                    <input type="checkbox">HTML</input>
+                    <input type="checkbox">CSS</input>
+                    <input type="checkbox">JavaScript</input>
+                    <input type="checkbox">Editeur de texte</input>
+                    <input type="checkbox">Ligne de commande</input>
+                </div>
+            </div>
+            <div class="comment">
+                <div>Décrivez votre expérience jusque-là</div>
+                <div><textarea placeholder="Décrivez votre expérience ici..." cols="30" rows="5"></textarea></div>
+            </div>
+            <div><button>Envoyer</button></div>
+        </form>
+    </body>
+</html>
